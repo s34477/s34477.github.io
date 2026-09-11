@@ -3,35 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แฟ้มสะสมงานของฉัน</title>
+    <title>About</title>
+
     <style>
-        body { font-family: sans-serif; background-color: #f4f7f6; text-align: center; padding: 30px; }
-        .container { max-width: 800px; margin: 0 auto; }
-        .project-card { background: lightpink; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
-        .btn { display: inline-block; background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #faf7fb;
+            color: #29252b;
+        }
+
+        nav {
+            padding: 20px;
+            background: white;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #a65d91;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #a65d91;
+            font-size: 45px;
+        }
+
+        .profile {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.8;
+        }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Portfolio</h1>
-        <p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="activities.html">Activities</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="performance.html">Performance</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-        <!-- กล่องผลงานชิ้นที่ 1 -->
-        <div class="project-card">
-            <h3>ผลการทดสอบวัดระดับภาษาจีน HSK</h3>
-            <p>รายละเอียดชิ้นงาน: กระผมได้ผ่านการสอบวัดระดับภาษาจีน HSK เพื่อวัดความรู้ภาษาจีนของตนเองที่เรียนมาทั้งหมดโดยมีคะแนนอยู่ที่ 233 / 300</p>
-        </div>
+<div class="container">
 
-        <!-- กล่องผลงานชิ้นที่ 2 -->
-        <div class="project-card">
-            <h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-            <p>รายละเอียดชิ้นงาน: เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
-        </div>
+    <h1>About Me</h1>
 
-        <!-- ปุ่มกดกลับหน้าแรก -->
-        <a href="index.html" class="btn">🔙 กลับหน้าแรก</a>
-    </div>
+    <img
+        class="profile"
+        src="images/profile.jpg"
+        alt="Profile">
+
+    <h2>Hello, I'm Nongnun.</h2>
+
+    <p>
+        สวัสดีค่ะ ฉันชื่อ Nongnun
+        ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6
+    </p>
+
+    <p>
+        ฉันสนใจด้านการสื่อสาร ภาษาจีน
+        ความคิดสร้างสรรค์ และการแสดง
+    </p>
+
+    <p>
+        ฉันชอบเรียนรู้สิ่งใหม่ ๆ
+        และพัฒนาตัวเองผ่านกิจกรรมและประสบการณ์ต่าง ๆ
+    </p>
+
+</div>
 
 </body>
 </html>
