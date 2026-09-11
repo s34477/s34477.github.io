@@ -1,101 +1,578 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>About</title>
 
+
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+
             background: #ffffe0;
             color: #29252b;
+
+            line-height: 1.7;
         }
+
+
+        /* ================= NAVBAR ================= */
 
         nav {
             padding: 20px;
+
             background: white;
+
             text-align: center;
-            border-bottom: 1px solid #ddd;
+
+            border-bottom: 1px solid #e5e5e5;
         }
+
 
         nav a {
-            margin: 10px;
+            margin: 8px;
+
             text-decoration: none;
-            color: #000000;
+
+            color: #333;
+
+            font-size: 14px;
         }
+
 
         nav a:hover {
-            color: #000000;
+            color: #a65d91;
         }
+
+
+
+        /* ================= MAIN ================= */
 
         .container {
-            max-width: 900px;
-            margin: 80px auto;
+            max-width: 1100px;
+
+            margin: 70px auto;
+
             padding: 20px;
+        }
+
+
+        .title {
             text-align: center;
+
+            margin-bottom: 60px;
         }
 
-        h1 {
+
+        .title h1 {
+            margin: 0;
+
+            font-size: 48px;
+
             color: #ff69b4;
-            font-size: 45px;
         }
 
-        .profile {
-            width: 250px;
-            height: 300px;
+
+        .title p {
+            color: #999;
+
+            margin-top: 8px;
+        }
+
+
+
+        /* ================= PROFILE ================= */
+
+        .profile-section {
+
+            display: grid;
+
+            grid-template-columns: 330px 1fr;
+
+            gap: 50px;
+
+            align-items: start;
+        }
+
+
+        /* รูป */
+
+        .profile-card {
+
+            background: white;
+
+            padding: 15px;
+
+            border-radius: 20px;
+
+            border: 1px solid #eee;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+
+        .profile-card img {
+
+            width: 100%;
+
+            height: 420px;
+
             object-fit: cover;
+
             border-radius: 15px;
         }
 
-        p {
-            color: #666;
-            line-height: 1.8;
+
+        /* ข้อมูล */
+
+        .info-card {
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            border: 1px solid #eee;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
         }
+
+
+        .info-card h2 {
+
+            margin-top: 0;
+
+            margin-bottom: 25px;
+
+            font-size: 28px;
+        }
+
+
+        .info-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .info-item {
+
+            padding: 18px;
+
+            background: #faf7fb;
+
+            border-radius: 12px;
+        }
+
+
+        .info-item span {
+
+            display: block;
+
+            font-size: 13px;
+
+            color: #a65d91;
+
+            margin-bottom: 4px;
+        }
+
+
+        .info-item strong {
+
+            font-size: 16px;
+
+            font-weight: normal;
+        }
+
+
+
+        /* ================= SKILLS ================= */
+
+        .skills-section {
+
+            margin-top: 30px;
+        }
+
+
+        .skills-section h2 {
+
+            font-size: 24px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .skills {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+
+        .skill {
+
+            padding: 8px 16px;
+
+            background: #f0e3f0;
+
+            color: #7d4d72;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+        }
+
+
+
+        /* ================= STATEMENT ================= */
+
+        .statement {
+
+            margin-top: 60px;
+
+            background: #f0e8f2;
+
+            padding: 45px;
+
+            border-radius: 20px;
+
+            text-align: center;
+        }
+
+
+        .statement h2 {
+
+            margin-top: 0;
+
+            font-size: 30px;
+
+            color: #7d4d72;
+        }
+
+
+        .statement p {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            color: #555;
+
+            line-height: 2;
+        }
+
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 800px) {
+
+            nav a {
+                display: inline-block;
+
+                margin: 5px;
+            }
+
+
+            .profile-section {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .profile-card {
+
+                max-width: 350px;
+
+                margin: auto;
+
+            }
+
+
+            .info-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .title h1 {
+
+                font-size: 40px;
+
+            }
+
+
+            .statement {
+
+                padding: 30px 20px;
+
+            }
+
+        }
+
     </style>
+
 </head>
+
+
 
 <body>
 
+
+<!-- ================= NAVBAR ================= -->
+
 <nav>
+
     <a href="index.html">Home</a>
+
     <a href="about.html">About</a>
+
     <a href="education.html">Education</a>
+
     <a href="activities.html">Activities</a>
-    <a href="achievements.html">Achievements</a>
+
+    <a href="achievement.html">Achievements</a>
+
     <a href="performance.html">Performance</a>
+
     <a href="contact.html">Contact</a>
+
 </nav>
+
+
+
+<!-- ================= CONTENT ================= -->
 
 <div class="container">
 
-    <h1>Introduction</h1>
 
-    <img
-        class="profile"
-        src="IMG_5793.jpeg"
-        alt="Profile">
-        
+    <div class="title">
 
-    <h2>นายธนกฤต ยะลาไสย์</h2>
+        <h1>INTRODUCTION</h1>
 
-    <p>
-        สวัสดีค่ะ ฉันชื่อ Nongnun
-        ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6
-    </p>
 
-    <p>
-        ฉันสนใจด้านการสื่อสาร ภาษาจีน
-        ความคิดสร้างสรรค์ และการแสดง
-    </p>
+    </div>
 
-    <p>
-        ฉันชอบเรียนรู้สิ่งใหม่ ๆ
-        และพัฒนาตัวเองผ่านกิจกรรมและประสบการณ์ต่าง ๆ
-    </p>
+
+
+    <!-- PROFILE + INFORMATION -->
+
+    <div class="profile-section">
+
+
+        <!-- รูปตัวเอง -->
+
+        <div class="profile-card">
+
+            <img
+                src="IMG_5793.jpeg"
+                alt="Profile">
+
+        </div>
+
+
+
+        <!-- ข้อมูลส่วนตัว -->
+
+        <div class="info-card">
+
+            <h2>Personal Information</h2>
+
+
+            <div class="info-grid">
+
+
+                <div class="info-item">
+
+                    <span>ชื่อ - นามสกุล</span>
+
+                    <strong>ใส่ชื่อจริงของคุณ</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>ชื่อเล่น</span>
+
+                    <strong>Nongnun</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>วันเกิด</span>
+
+                    <strong>ใส่วัน / เดือน / ปีเกิด</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>เชื้อชาติ</span>
+
+                    <strong>ใส่ข้อมูล</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>สัญชาติ</span>
+
+                    <strong>ใส่ข้อมูล</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>ระดับการศึกษา</span>
+
+                    <strong>มัธยมศึกษาปีที่ 6</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>ที่อยู่</span>
+
+                    <strong>ใส่จังหวัด / เขต</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>เบอร์โทรศัพท์</span>
+
+                    <strong>ใส่เบอร์สำหรับติดต่อ</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>Instagram</span>
+
+                    <strong>@yourinstagram</strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>Email</span>
+
+                    <strong>your@email.com</strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ความสามารถ -->
+
+            <div class="skills-section">
+
+                <h2>My Skills</h2>
+
+
+                <div class="skills">
+
+                    <div class="skill">
+                        ภาษาจีน
+                    </div>
+
+                    <div class="skill">
+                        การสื่อสาร
+                    </div>
+
+                    <div class="skill">
+                        การนำเสนอ
+                    </div>
+
+                    <div class="skill">
+                        การแสดง
+                    </div>
+
+                    <div class="skill">
+                        ความคิดสร้างสรรค์
+                    </div>
+
+                    <div class="skill">
+                        การทำงานเป็นทีม
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= STATEMENT ================= -->
+
+    <div class="statement">
+
+        <h2>Personal Statement</h2>
+
+
+        <p>
+
+            ใส่ Statement ของคุณตรงนี้
+
+            <br><br>
+
+            เขียนเกี่ยวกับตัวตน ความสนใจ
+            ประสบการณ์ที่ผ่านมา
+            เหตุผลที่สนใจด้านนิเทศศาสตร์
+            และเป้าหมายในอนาคต
+
+            <br><br>
+
+            สามารถเขียนเป็นย่อหน้าประมาณ
+            1–2 ย่อหน้า เพื่อให้ผู้อ่านรู้จักตัวตน
+            และความตั้งใจของคุณมากขึ้น
+
+        </p>
+
+    </div>
+
 
 </div>
 
+
 </body>
+
 </html>
