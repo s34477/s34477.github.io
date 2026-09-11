@@ -3,66 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ff69b4;
+            color: #29252b;
+            text-align: center;
+        }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        nav {
+            padding: 20px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #a65d91;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 70px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #a65d91;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            border: 1px solid #333;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <a href="index.html" class="logo">
-        Thanakit ✦
-    </a>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="activities.html">Activities</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="performance.html">Performance</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <nav>
-        <a href="index.html">หน้าแรก</a>
-        <a href="about.html">เกี่ยวกับฉัน</a>
-        <a href="education.html">การศึกษา</a>
-        <a href="works.html">ผลงาน</a>
-        <a href="contact.html">ติดต่อ</a>
-    </nav>
-</header>
+<div class="hero">
 
+    <div>
+        <p>MY PORTFOLIO • 2026</p>
 
-<main class="hero">
+        <h1>NONGNUN</h1>
 
-    <div class="profile-circle">
-        👩🏻‍🎓
+        <h2>Communication Arts • Performance • Creativity</h2>
+
+        <p>
+            Welcome to my personal portfolio.
+        </p>
+
+        <a class="button" href="about.html">
+            About Me →
+        </a>
     </div>
 
-    <p class="hello">
-        
-    </p>
-
-    <h1>
-        Rattanaphorn
-    </h1>
-
-    <p class="welcome">
-        ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน
-    <
-   
-
-    <p class="description">
-        มาทำความรู้จักฉันให้มากขึ้นกันเถอะ
-    </p>
-
-    <a href="about.html" class="main-button">
-        ทำความรู้จักฉัน →
-    </a>
-
-</main>
-
-
-<footer>
-    <p>Made with ♡ by Thanakit</p>
-</footer>
+</div>
 
 </body>
 </html>
