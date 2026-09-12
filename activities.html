@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | Nongnun</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #faf7fb;
+        }
+        nav {
+            padding: 20px;
+            background: white;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #a65d91;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+        .card-text {
+            padding: 20px;
+        }
+        .card-text p {
+            color: #666;
+        }
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="activities.html">Activities</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="performance.html">Performance</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+    <h1>Activities</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="images/activity1.jpg" alt="Activity 1">
+            <div class="card-text">
+                <h2>กิจกรรมที่ 1</h2>
+                <p>
+                    รายละเอียดกิจกรรม
+                    และหน้าที่ที่ได้รับ
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/activity2.jpg" alt="Activity 2">
+            <div class="card-text">
+                <h2>กิจกรรมที่ 2</h2>
+                <p>
+                    รายละเอียดกิจกรรม
+                    และสิ่งที่ได้เรียนรู้
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/activity3.jpg" alt="Activity 3">
+            <div class="card-text">
+                <h2>กิจกรรมที่ 3</h2>
+                <p>
+                    รายละเอียดกิจกรรม
+                    และประสบการณ์
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
