@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="th">
 
@@ -17,7 +18,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: #FFFFF0;
-            color: 000000;
+            color: #000000;
         }
 
         /* NAVIGATION */
@@ -130,6 +131,31 @@
             margin: 35px 0;
         }
 
+        /* PAGE BUTTONS */
+
+        .page-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .page-buttons a {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #675B58;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #675B58;
+            background: #FFFFFF;
+            transition: 0.3s;
+        }
+
+        .page-buttons a:hover {
+            background: #675B58;
+            color: #FFFFFF;
+        }
+
         /* MOBILE */
 
         @media (max-width: 700px) {
@@ -154,40 +180,34 @@
                 display: inline-block;
                 margin: 5px;
             }
+
+            .page-buttons {
+                flex-wrap: wrap;
+            }
+
         }
 
     </style>
 
 </head>
 
-
 <body>
-
 
 <!-- NAVIGATION -->
 
 <nav>
 
     <a href="index.html">Home</a>
-
     <a href="about.html">About</a>
-
     <a href="education.html">Education</a>
-
     <a href="activities.html">Activities</a>
-
     <a href="certificate.html">Certificate</a>
-
     <a href="performance.html">Performance</a>
-
     <a href="speech.html">Final Speech</a>
 
 </nav>
 
-
-
 <div class="container">
-
 
     <!-- TITLE -->
 
@@ -199,22 +219,16 @@
 
     </div>
 
-
-
     <!-- ================= ม.ต้น ================= -->
 
     <div class="education-card">
 
-
         <div class="education-header">
-
-            <!-- เปลี่ยนชื่อไฟล์ตรงนี้เป็นชื่อรูปตราโรงเรียนของมึง -->
 
             <img
                 src="IMG_0480.jpeg"
                 class="school-logo"
                 alt="ตราโรงเรียน">
-
 
             <h2>มัธยมศึกษาตอนต้น</h2>
 
@@ -222,72 +236,46 @@
 
         </div>
 
-
         <div class="education-info">
 
-
             <div class="info">
-
                 <span>โรงเรียน</span>
-
                 <strong>โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"</strong>
-
             </div>
 
-
             <div class="info">
-
                 <span>ระดับชั้น</span>
-
                 <strong>มัธยมศึกษาปีที่1 - 3</strong>
-
             </div>
 
-
             <div class="info">
-
                 <span>แผนการเรียน</span>
-
                 <strong>ภาษาอังกฤษ - ภาษาจีน</strong>
-
             </div>
-
 
             <div class="info">
-
                 <span>GPA</span>
-
                 <strong>3.20</strong>
-
             </div>
-
 
         </div>
 
     </div>
 
-
-
     <!-- ================= เส้นคั่น ================= -->
 
     <div class="divider"></div>
-
-
 
     <!-- ================= ม.ปลาย ================= -->
 
     <div class="education-card">
 
-
         <div class="education-header">
-
-            <!-- ถ้าใช้ตราโรงเรียนเดียวกัน ให้ใช้รูปเดิมได้เลย -->
 
             <img
                 src="IMG_0480.jpeg"
                 class="school-logo"
                 alt="ตราโรงเรียน">
-
 
             <h2>มัธยมศึกษาตอนปลาย</h2>
 
@@ -295,53 +283,43 @@
 
         </div>
 
-
         <div class="education-info">
 
-
             <div class="info">
-
                 <span>โรงเรียน</span>
-
                 <strong>โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"</strong>
-
             </div>
 
-
             <div class="info">
-
                 <span>ระดับชั้น</span>
-
                 <strong>มัธยมศึกษาปีที่4 - 6</strong>
-
             </div>
 
-
             <div class="info">
-
                 <span>แผนการเรียน</span>
-
                 <strong>เตรียมมนุษยศาสตร์ภาษาจีน</strong>
-
             </div>
-
 
             <div class="info">
-
                 <span>GPA</span>
-
                 <strong>3.85</strong>
-
             </div>
-
 
         </div>
 
     </div>
 
+    <!-- ================= PAGE BUTTONS ================= -->
+
+    <div class="page-buttons">
+
+        <a href="about.html">← Back</a>
+
+        <a href="activities.html">Next →</a>
+
+    </div>
 
 </div>
-
 
 </body>
 
