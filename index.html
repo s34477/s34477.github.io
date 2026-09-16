@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -9,7 +10,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #FFFFF0; 
+            background: #FFFFF0;
             color: #ADD8E6;
             text-align: center;
         }
@@ -50,6 +51,16 @@
             color: #666;
         }
 
+        /* รูปโปรไฟล์ */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #675B58;
+            margin-bottom: 15px;
+        }
+
         .button {
             display: inline-block;
             margin-top: 25px;
@@ -77,6 +88,12 @@
 <div class="hero">
 
     <div>
+
+        <!-- รูปโปรไฟล์ -->
+        <img src="profile.jpg"
+             alt="รูปโปรไฟล์ของ THANAKIT YALASAI"
+             class="profile-img">
+
         <p>THANAKIT YALASAI</p>
 
         <h1>Portf✿lio</h1>
@@ -90,6 +107,7 @@
         <a class="button" href="about.html">
             NEXT →
         </a>
+
     </div>
 
 </div>
