@@ -1,63 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Activities</title>
+
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #FFFFF0;
         }
+
         nav {
             padding: 20px;
             background: #675B58;
             text-align: center;
         }
+
         nav a {
             margin: 10px;
             text-decoration: none;
             color: #ffffff;
         }
+
         .container {
             max-width: 1000px;
             margin: 70px auto;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             color: #ADD8E6;
         }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
+
         .card {
             background: #ffffff;
             border-radius: 15px;
             overflow: hidden;
         }
+
         .card img {
             width: 100%;
             height: 230px;
             object-fit: cover;
         }
+
         .card-text {
             padding: 20px;
         }
+
         .card-text p {
             color: #666;
         }
+
+        /* PAGE BUTTONS */
+
+        .page-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .page-buttons a {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #675B58;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #675B58;
+            background: #FFFFFF;
+            transition: 0.3s;
+        }
+
+        .page-buttons a:hover {
+            background: #675B58;
+            color: #FFFFFF;
+        }
+
         @media (max-width: 700px) {
+
             .grid {
                 grid-template-columns: 1fr;
             }
+
+            .page-buttons {
+                flex-wrap: wrap;
+            }
+
         }
+
     </style>
+
 </head>
+
 <body>
+
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -67,41 +121,79 @@
     <a href="performance.html">Performance</a>
     <a href="speech.html">Final Speech</a>
 </nav>
+
 <div class="container">
+
     <h1>Activities</h1>
+
     <div class="grid">
+
         <div class="card">
+
             <img src="IMG_0482.jpeg" alt="Activity 1">
+
             <div class="card-text">
+
                 <h2>กิจกรรมค่ายปันน้ำใจ 2568</h2>
+
                 <p>
                     ได้เข้าร่วมกิจกรรมค่ายปันน้ำใจภาษาจีนประจำปีการศึกษา 2568 รูปแบบใหม่ ณ โรงเรียนพนัสพิทยาคาร โดยมีนักเรียนแผนการเรียนภาษาจีนจากโรงเรียนหลายแห่งมาเข้าร่วมกิจกรรมนี้
                     ภายในกิจกรรมมีฐานที่แต่ละโรงเรียนคิดและจัดทำขึ้นมากมายหลายฐาน
                 </p>
+
             </div>
+
         </div>
+
         <div class="card">
+
             <img src="IMG_0481.jpeg" alt="Activity 2">
+
             <div class="card-text">
+
                 <h2>กิจกรรมวันตรุษจีน 2569</h2>
+
                 <p>
-                    ได้รับมอบหมายจากคุณครูหัวหน้าแผนการเรียนภาษาจีนให้จัดการแสดง"ร้องเพลงประสานเสียง" 
-                    เนื่องในวันเฉลิมฉลองเทศกาลตรุษจีน ณ โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"ประจำปีการศึกษา2568 
+                    ได้รับมอบหมายจากคุณครูหัวหน้าแผนการเรียนภาษาจีนให้จัดการแสดง"ร้องเพลงประสานเสียง"
+                    เนื่องในวันเฉลิมฉลองเทศกาลตรุษจีน ณ โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"ประจำปีการศึกษา2568
                     โดยใช้เพลง 月亮代表我的心 ในการขับร้อง โดยมีนักเรียนระดับชั้นมัธยมศึกษาปีที่ 5/7 รวมถึงตัวฉันดำเนินการแสดง
                 </p>
+
             </div>
+
         </div>
+
         <div class="card">
+
             <img src="IMG_0483.jpeg" alt="Activity 3">
+
             <div class="card-text">
+
                 <h2>กิจกรรมอบรมเชิงปฏิบัติ 2569</h2>
+
                 <p>
-                    ได้เข้าร่วมกิจกรรมค่ายยกระดับผลสัมฤทธิ์ทางด้านภาษาจีนและได้รับการทดสอบวัดระดับภาษาจีน HSK mock test 
+                    ได้เข้าร่วมกิจกรรมค่ายยกระดับผลสัมฤทธิ์ทางด้านภาษาจีนและได้รับการทดสอบวัดระดับภาษาจีน HSK mock test
                     เพื่อทดสอบความรู้หลังจากที่ผ่านการอบรมทางทฤษฎี ณ มหาวิทยาลัยธุรกิจบัณฑิต กรุงเทพมหานคร
                 </p>
+
             </div>
+
         </div>
+
     </div>
+
+    <!-- PAGE BUTTONS -->
+
+    <div class="page-buttons">
+
+        <a href="education.html">← Back</a>
+
+        <a href="certificate.html">Next →</a>
+
+    </div>
+
 </div>
+
 </body>
+
 </html>
