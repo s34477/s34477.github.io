@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="th">
 
@@ -88,6 +89,30 @@
             color: #778899;
         }
 
+        /* PAGE BUTTONS */
+
+        .page-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .page-buttons a {
+            padding: 12px 25px;
+            background: #675B58;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .page-buttons a:hover {
+            background: #ADD8E6;
+            color: #5e4e3e;
+        }
+
         @media (max-width: 600px) {
 
             .speech {
@@ -100,6 +125,16 @@
 
             .speech .quote {
                 font-size: 21px;
+            }
+
+            .page-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .page-buttons a {
+                width: 100%;
+                text-align: center;
             }
 
         }
@@ -154,6 +189,11 @@
 
         <div class="ending">
             Thank you for being part of my story. ♡
+        </div>
+
+        <div class="page-buttons">
+            <a href="performance.html">← Back</a>
+            <a href="index.html">Home →</a>
         </div>
 
     </div>
