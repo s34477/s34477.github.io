@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +9,11 @@
     <title>Performance</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -81,12 +88,45 @@
             line-height: 1.8;
         }
 
+        /* PAGE BUTTONS */
+
+        .page-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .page-buttons a {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #675B58;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #675B58;
+            background: #FFFFFF;
+            transition: 0.3s;
+        }
+
+        .page-buttons a:hover {
+            background: #675B58;
+            color: #FFFFFF;
+        }
+
         @media (max-width: 700px) {
+
             .performance-grid {
                 grid-template-columns: 1fr;
             }
+
+            .page-buttons {
+                flex-wrap: wrap;
+            }
+
         }
+
     </style>
+
 </head>
 
 <body>
@@ -101,7 +141,6 @@
     <a href="speech.html">Final Speech</a>
 </nav>
 
-
 <div class="container">
 
     <h1>Performance</h1>
@@ -110,9 +149,7 @@
         Performance experience
     </p>
 
-
     <div class="performance-grid">
-
 
         <!-- ผลงานที่ 1 -->
 
@@ -132,7 +169,6 @@
 
         </div>
 
-
         <!-- ผลงานที่ 2 -->
 
         <div class="card">
@@ -145,17 +181,27 @@
 
                 <p>
                     ได้รับมอบหมายจากคุณครูหัวหน้าแผนการเรียนภาษาจีนให้ทำหน้าที่พิธีกรในการดำเนินงานกิจกรรมเฉลิมฉลองเทศกาลวันตรุษจีน
-                    โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์" ประจำปีการ 2567 
+                    โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์" ประจำปีการ 2567
                 </p>
 
             </div>
 
         </div>
 
+    </div>
+
+    <!-- PAGE BUTTONS -->
+
+    <div class="page-buttons">
+
+        <a href="certificate.html">← Back</a>
+
+        <a href="speech.html">Next →</a>
 
     </div>
 
 </div>
 
 </body>
+
 </html>
