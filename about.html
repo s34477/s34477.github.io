@@ -1,528 +1,359 @@
+
 <!DOCTYPE html>
 <html lang="th">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
-
     <style>
-
         * {
             box-sizing: border-box;
         }
 
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-
             background: #FFFFF0;
             color: #000000;
-
             line-height: 1.7;
         }
-
 
         /* ================= NAVBAR ================= */
 
         nav {
             padding: 20px;
-
             background: #675B58;
-
             text-align: center;
-
             border-bottom: 1px solid #e5e5e5;
         }
 
-
         nav a {
             margin: 8px;
-
             text-decoration: none;
-
             color: #ffffff;
-
             font-size: 14px;
         }
-
 
         nav a:hover {
             color: #FFF0F5;
         }
 
-
-
         /* ================= MAIN ================= */
 
         .container {
             max-width: 1100px;
-
             margin: 70px auto;
-
             padding: 20px;
         }
 
-
         .title {
             text-align: center;
-
             margin-bottom: 60px;
         }
 
-
         .title h1 {
             margin: 0;
-
             font-size: 48px;
-
             color: #ADD8E6;
         }
 
-
         .title p {
             color: #999;
-
             margin-top: 8px;
         }
-
-
 
         /* ================= PROFILE ================= */
 
         .profile-section {
-
             display: grid;
-
             grid-template-columns: 330px 1fr;
-
             gap: 50px;
-
             align-items: start;
         }
 
-
-        /* รูป */
-
         .profile-card {
-
             background: white;
-
             padding: 15px;
-
             border-radius: 20px;
-
             border: 1px solid #eee;
-
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
-
         .profile-card img {
-
             width: 100%;
-
             height: 420px;
-
             object-fit: cover;
-
             border-radius: 15px;
         }
 
-
-        /* ข้อมูล */
+        /* ================= INFORMATION ================= */
 
         .info-card {
-
             background: #ffffff;
-
             padding: 35px;
-
             border-radius: 20px;
-
             border: 1px solid #eee;
-
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
         }
 
-
         .info-card h2 {
-
             margin-top: 0;
-
             margin-bottom: 25px;
-
             font-size: 28px;
         }
 
-
         .info-grid {
-
             display: grid;
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 20px;
         }
 
-
         .info-item {
-
             padding: 18px;
-
             background: #f5f5f5;
-
             border-radius: 12px;
         }
 
-
         .info-item span {
-
             display: block;
-
             font-size: 13px;
-
             color: #4682B4;
-
             margin-bottom: 4px;
         }
 
-
         .info-item strong {
-
             font-size: 16px;
-
             font-weight: normal;
         }
-
-
 
         /* ================= SKILLS ================= */
 
         .skills-section {
-
             margin-top: 30px;
         }
 
-
         .skills-section h2 {
-
             font-size: 24px;
-
             margin-bottom: 15px;
         }
 
-
         .skills {
-
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
         }
 
-
         .skill {
-
             padding: 8px 16px;
-
             background: #F5F5F5;
-
             color: #4682B4;
-
             border-radius: 30px;
-
             font-size: 14px;
         }
-
-
 
         /* ================= STATEMENT ================= */
 
         .statement {
-
             margin-top: 60px;
-
             background: #FFFFFF;
-
             padding: 45px;
-
             border-radius: 20px;
-
             text-align: center;
         }
 
-
         .statement h2 {
-
             margin-top: 0;
-
             font-size: 30px;
-
             color: #4682B4;
         }
 
-
         .statement p {
-
             max-width: 800px;
-
             margin: auto;
-
             color: #5e4e3e;
-
             line-height: 2;
         }
 
+        /* ================= PAGE BUTTONS ================= */
 
+        .page-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .page-buttons a {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #675B58;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #675B58;
+            background: #FFFFFF;
+            transition: 0.3s;
+        }
+
+        .page-buttons a:hover {
+            background: #675B58;
+            color: #FFFFFF;
+        }
 
         /* ================= MOBILE ================= */
 
         @media (max-width: 800px) {
-
             nav a {
                 display: inline-block;
-
                 margin: 5px;
             }
 
-
             .profile-section {
-
                 grid-template-columns: 1fr;
-
             }
-
 
             .profile-card {
-
                 max-width: 350px;
-
                 margin: auto;
-
             }
-
 
             .info-grid {
-
                 grid-template-columns: 1fr;
-
             }
-
 
             .title h1 {
-
                 font-size: 40px;
-
             }
-
 
             .statement {
-
                 padding: 30px 20px;
-
             }
 
+            .page-buttons {
+                flex-wrap: wrap;
+            }
         }
-
     </style>
-
 </head>
-
-
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
 
-<!-- ================= NAVBAR ================= -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="activities.html">Activities</a>
+        <a href="certificate.html">Certificate</a>
+        <a href="performance.html">Performance</a>
+        <a href="speech.html">Final Speech</a>
+    </nav>
 
-<nav>
+    <!-- ================= CONTENT ================= -->
 
-    <a href="index.html">Home</a>
+    <div class="container">
 
-    <a href="about.html">About</a>
-
-    <a href="education.html">Education</a>
-
-    <a href="activities.html">Activities</a>
-    
-    <a href="certificate.html">Certificate</a>
-
-    <a href="performance.html">Performance</a>
-
-    <a href="speech.html">Final Speech</a>
-
-</nav>
-
-
-
-<!-- ================= CONTENT ================= -->
-
-<div class="container">
-
-
-    <div class="title">
-
-        <h1>INTRODUCTION</h1>
-
-
-    </div>
-
-
-
-    <!-- PROFILE + INFORMATION -->
-
-    <div class="profile-section">
-
-
-        <!-- รูปตัวเอง -->
-
-        <div class="profile-card">
-
-            <img
-                src="IMG_5793.jpeg"
-                alt="Profile">
-
+        <div class="title">
+            <h1>INTRODUCTION</h1>
         </div>
 
+        <!-- PROFILE + INFORMATION -->
 
+        <div class="profile-section">
 
-        <!-- ข้อมูลส่วนตัว -->
+            <!-- รูปตัวเอง -->
 
-        <div class="info-card">
-
-            <h2>Personal Information</h2>
-
-
-            <div class="info-grid">
-
-
-                <div class="info-item">
-
-                    <span>NAME</span>
-
-                    <strong>นายธนกฤต ยะลาไสย์</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>NICKNAME</span>
-
-                    <strong>นัน</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>BIRTHDAY</span>
-
-                    <strong>31 กรกฎาคม พ.ศ.2552</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>ETHNICITY</span>
-
-                    <strong>ไทย</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>NATIONS</span>
-
-                    <strong>ไทย</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>EDUCATION</span>
-
-                    <strong>ชั้นมัธยมศึกษาปีที่ 6</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>ADDRESS</span>
-
-                    <strong>65/10 ตำบลหนองไผ่แก้ว อำเภอบ้านบึง จังหวัดชลบุรี</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>NUMBER</span>
-
-                    <strong>097-068-7908</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>LINE ID</span>
-
-                    <strong>nn_thk</strong>
-
-                </div>
-
-
-                <div class="info-item">
-
-                    <span>Email</span>
-
-                    <strong>nunnunnunthanakit@email.com</strong>
-
-                </div>
-
-
+            <div class="profile-card">
+                <img src="IMG_5793.jpeg" alt="Profile">
             </div>
 
+            <!-- ข้อมูลส่วนตัว -->
 
+            <div class="info-card">
 
-            <!-- Ability -->
+                <h2>Personal Information</h2>
 
-            <div class="skills-section">
+                <div class="info-grid">
 
-                <h2>My Skills</h2>
-
-
-                <div class="skills">
-
-                    <div class="skill">
-                        English communication
+                    <div class="info-item">
+                        <span>NAME</span>
+                        <strong>นายธนกฤต ยะลาไสย์</strong>
                     </div>
 
-                    <div class="skill">
-                        Chinese communication
+                    <div class="info-item">
+                        <span>NICKNAME</span>
+                        <strong>นัน</strong>
                     </div>
 
-                    <div class="skill">
-                        Acting
+                    <div class="info-item">
+                        <span>BIRTHDAY</span>
+                        <strong>31 กรกฎาคม พ.ศ.2552</strong>
                     </div>
 
-                    <div class="skill">
-                        Teamwork
+                    <div class="info-item">
+                        <span>ETHNICITY</span>
+                        <strong>ไทย</strong>
                     </div>
 
+                    <div class="info-item">
+                        <span>NATIONS</span>
+                        <strong>ไทย</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>EDUCATION</span>
+                        <strong>ชั้นมัธยมศึกษาปีที่ 6</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>ADDRESS</span>
+                        <strong>65/10 ตำบลหนองไผ่แก้ว อำเภอบ้านบึง จังหวัดชลบุรี</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>NUMBER</span>
+                        <strong>097-068-7908</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>LINE ID</span>
+                        <strong>nn_thk</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Email</span>
+                        <strong>nunnunnunthanakit@email.com</strong>
+                    </div>
+
+                </div>
+
+                <!-- Ability -->
+
+                <div class="skills-section">
+
+                    <h2>My Skills</h2>
+
+                    <div class="skills">
+
+                        <div class="skill">
+                            English communication
+                        </div>
+
+                        <div class="skill">
+                            Chinese communication
+                        </div>
+
+                        <div class="skill">
+                            Acting
+                        </div>
+
+                        <div class="skill">
+                            Teamwork
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -530,37 +361,39 @@
 
         </div>
 
+        <!-- ================= STATEMENT ================= -->
+
+        <div class="statement">
+
+            <h2>Personal Statement</h2>
+
+            <p>
+                <br><br>
+
+                ตลอดระยะเวลา6ปีที่ได้เรียนภาษาจีน ฉันได้เรียนรู้ทั้งด้านภาษา วัฒนธรรม และมุมมองที่แตกต่าง
+                ทำให้เกิดความสนใจและต้องการพัฒนาทักษะภาษาจีนของตนเองมากขึ้น โดยเฉพาะด้านการสื่อสารและการเข้าใจวัฒนธรรมและผู้คนชาวจีน
+                การเรียนภาษาจีนทำให้ฉันเห็นว่าภาษาไม่ได้เป็นเพียงเครื่องมือในการสื่อสาร แต่ยังเป็นสิ่งที่ช่วยเปิดโอกาสให้เราได้เรียนรู้กับผู้คนและสังคมที่แตกต่างออกไป
+                ฉันจึงต้องการศึกษาภาษาจีนให้ลึกซึ้งยิ่งขึ้นทั้งด้านภาษา วัฒนธรรม และการนำความรู้ไปประยุกต์ใช้ในสถานการณ์จริง
+
+                <br><br>
+
+                ด้วยเหตุนี้ฉันจึงต้องการศึกษาต่อในคณะศิลปศาสตร์เอกภาษาจีน เพื่อพัฒนาความสามารถทางภาษาและการสื่อสารของตนเองให้มากขึ้น
+                พร้อมนำความรู้และประสบการณ์ที่ได้รับไปต่อยอดสู่การทำงานในอนาคตที่เกี่ยวข้องกับภาษาจีน
+            </p>
+
+        </div>
+
+        <!-- ================= PAGE BUTTONS ================= -->
+
+        <div class="page-buttons">
+
+            <a href="index.html">← ย้อนกลับ</a>
+
+            <a href="education.html">ถัดไป →</a>
+
+        </div>
+
     </div>
-
-
-
-    <!-- ================= STATEMENT ================= -->
-
-    <div class="statement">
-
-        <h2>Personal Statement</h2>
-
-
-        <p>
-
-            <br><br>
-
-            ตลอดระยะเวลา6ปีที่ได้เรียนภาษาจีน ฉันได้เรียนรู้ทั้งด้านภาษา วัฒนธรรม และมุมมองที่แตกต่าง
-            ทำให้เกิดความสนใจและต้องการพัฒนาทักษะภาษาจีนของตนเองมากขึ้น โดยเฉพาะด้านการสื่อสารและการเข้าใจวัฒนธรรมและผู้คนชาวจีน
-            การเรียนภาษาจีนทำให้ฉันเห็นว่าภาษาไม่ได้เป็นเพียงเครื่องมือในการสื่อสาร แต่ยังเป็นสิ่งที่ช่วยเปิดโอกาสให้เราได้เรียนรู้กับผู้คนและสังคมที่แตกต่างออกไป 
-            ฉันจึงต้องการศึกษาภาษาจีนให้ลึกซึ้งยิ่งขึ้นทั้งด้านภาษา วัฒนธรรม และการนำความรู้ไปประยุกต์ใช้ในสถานการณ์จริง 
-
-            <br><br>
-
-            ด้วยเหตุนี้ฉันจึงต้องการศึกษาต่อในคณะศิลปศาสตร์เอกภาษาจีน เพื่อพัฒนาความสามารถทางภาษาและการสื่อสารของตนเองให้มากขึ้น 
-            พร้อมนำความรู้และประสบการณ์ที่ได้รับไปต่อยอดสู่การทำงานในอนาคตที่เกี่ยวข้องกับภาษาจีน
-        </p>
-
-    </div>
-
-
-</div>
-
 
 </body>
 
