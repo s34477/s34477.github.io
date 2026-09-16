@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="th">
 
@@ -8,6 +9,10 @@
     <title>Certificate</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             margin: 0;
@@ -84,42 +89,64 @@
             font-size: 14px;
         }
 
+        /* PAGE BUTTONS */
+
+        .page-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .page-buttons a {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #675B58;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #675B58;
+            background: #FFFFFF;
+            transition: 0.3s;
+        }
+
+        .page-buttons a:hover {
+            background: #675B58;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 700px) {
+
+            .page-buttons {
+                flex-wrap: wrap;
+            }
+
+        }
+
     </style>
 
 </head>
 
-
 <body>
-
 
 <nav>
 
     <a href="index.html">Home</a>
-
     <a href="about.html">About</a>
-
     <a href="education.html">Education</a>
-
     <a href="activities.html">Activities</a>
-
-    <a href="achievement.html">Certificate</a>
-
+    <a href="certificate.html">Certificate</a>
     <a href="performance.html">Performance</a>
-
     <a href="speech.html">Final Speech</a>
 
 </nav>
 
-
 <div class="container">
-
 
     <h1>Certificate</h1>
 
     <p class="subtitle">
         My certificates and achievements
     </p>
-
 
     <!-- ใบที่ 1 -->
 
@@ -135,16 +162,15 @@
         </span>
 
         <h2>
-            ผลการทดสอบวัดระดับความรู้ภาษาจีน HSK 
+            ผลการทดสอบวัดระดับความรู้ภาษาจีน HSK
         </h2>
 
         <p>
-            ผ่านการทดสอบวัดระดับความรู้ภาษาจีน HSK ระดับ4 
+            ผ่านการทดสอบวัดระดับความรู้ภาษาจีน HSK ระดับ4
             โดยมีคะแนนผ่านเกณฑ์ตามมาตรฐานระดับสากลอยู่ที่ 233 / 300 คะแนน
         </p>
 
     </div>
-
 
     <!-- ใบที่ 2 -->
 
@@ -165,11 +191,10 @@
 
         <p>
             ได้รับรางวัลรองชนะเลิศอันดับที่ 1 ในการแข่งขันพากษ์เสียงกิจกรรมวรรณคดี on air ระดับชั้นมัธยมศึกษาตอนปลาย ประเภททีม5คน
-            เรื่อง "ขุนช้างขุนแผนตอนถวายฎีกา" เนื่องในวันภาษาไทยแห่งชาติ ประจำปีการศึกษา 2569 
+            เรื่อง "ขุนช้างขุนแผนตอนถวายฎีกา" เนื่องในวันภาษาไทยแห่งชาติ ประจำปีการศึกษา 2569
         </p>
 
     </div>
-
 
     <!-- ใบที่ 3 -->
 
@@ -195,7 +220,6 @@
 
     </div>
 
-
     <!-- ใบที่ 4 -->
 
     <div class="achievement">
@@ -214,12 +238,11 @@
         </h2>
 
         <p>
-            ได้เป็นจิตอาสาในการดำเนินกิจกรรมเปิดสารานุกรมภายในงานเปิดบ้านวิชาการ "BBU JOB FAIR " ประจำปีการศึกษา 2568
+            ได้เป็นจิตอาสาในการดำเนินกิจกรรมเปิดสารานุกรมภายในงานเปิดบ้านวิชาการ "BBU JOB FAIR" ประจำปีการศึกษา 2568
             ณ ห้องสมุดเฉลิมพระเกียรติกาญจนาภิเษกโรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"
         </p>
 
     </div>
-
 
     <!-- ใบที่ 5 -->
 
@@ -239,15 +262,23 @@
         </h2>
 
         <p>
-            ได้เข้าร่วมกิจกรรมค่ายพัฒนาคุณธรรม จริยธรรมนักเรียนประจำปีการศึกษา 2569 
+            ได้เข้าร่วมกิจกรรมค่ายพัฒนาคุณธรรม จริยธรรมนักเรียนประจำปีการศึกษา 2569
             ณ โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"
         </p>
 
     </div>
 
+    <!-- PAGE BUTTONS -->
+
+    <div class="page-buttons">
+
+        <a href="activities.html">← Back</a>
+
+        <a href="performance.html">Next →</a>
+
+    </div>
 
 </div>
-
 
 </body>
 
